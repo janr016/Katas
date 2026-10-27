@@ -20,4 +20,9 @@ describe('FizzBuzz Game', () => {
   test('should return BuzzWhizz for input 5', () => {
     expect(game(5)).toEqual('BuzzWhizz');
   });
+
+  test('should return Fizz for input 6', () => {
+    expect(game(6)).toEqual('Fizz');
+  });
+  
 });
