@@ -41,6 +41,10 @@ export const game = (input: number): number | string => {
     result += 'Fizz';
   }
   
+  if (input % 5 === 0) {
+    result += 'Buzz';
+  }
+  
   if (isPrime(input)) {
     result += 'Whizz';
   }
