@@ -13,6 +13,10 @@ describe('FizzBuzz Game', () => {
     expect(game(3)).toEqual('FizzWhizz');
   });
 
+  test('should return 4 for input 4', () => {
+    expect(game(4)).toEqual(4);
+  });
+
   test('should return BuzzWhizz for input 5', () => {
     expect(game(5)).toEqual('BuzzWhizz');
   });
