@@ -29,4 +29,14 @@ describe('FizzBuzz Game', () => {
     expect(game(15)).toEqual('FizzBuzz');
   });
 
+  test.each([
+    [7, 'Whizz'],
+    [13, 'Whizz'],
+    [91, 91],          // 91 no es primo (7 * 13)
+    [97, 'Whizz'],      // 97 es primo
+    [100, 'Buzz']      // 100 es múltiplo de 5, no es primo
+  ])('should return correct result for input %i', (input, expected) => {
+    expect(game(input)).toEqual(expected);
+  });
+
 });
