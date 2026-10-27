@@ -1,12 +1,11 @@
 import { game } from "./fizzBuzzWhizz";
 
 describe('FizzBuzz Game', () => {
-  test('should works', () => {
-    const result = game(1);
-    expect(result).toEqual(1);
+  test('should return 1 for input 1', () => {
+    expect(game(1)).toEqual(1);
   });
-  test('should works 2', () => {
-    const result = game(2);
-    expect(result).toEqual(2);
+
+  test('should return Whizz for input 2', () => {
+    expect(game(2)).toEqual('Whizz');
   });
 });
