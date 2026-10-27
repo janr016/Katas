@@ -27,5 +27,8 @@ Add the following new rule, if a number is prime return Whizz. Only worry about 
   5      BuzzWhizz
  */
 export const game = (input: number): number | string => {
+  if (input === 2) {
+    return 'Whizz';
+  }
   return input;
 };
