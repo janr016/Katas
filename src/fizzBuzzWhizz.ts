@@ -36,18 +36,18 @@ const isPrime = (n: number): boolean => {
 
 export const game = (input: number): number | string => {
   let result = '';
-  
+
   if (input % 3 === 0) {
     result += 'Fizz';
   }
-  
+
   if (input % 5 === 0) {
     result += 'Buzz';
   }
-  
+
   if (isPrime(input)) {
     result += 'Whizz';
   }
-  
+
   return result || input;
 };
